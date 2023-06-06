@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Sifre">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="9dp"
+        android:text="02190201008"
+        android:textColor="#FAF8F3"
+        android:textSize="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/harfalti"
+        app:layout_constraintTop_toBottomOf="@+id/harfalti" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/corbaci" />
+
+    <TextView
+        android:id="@+id/yazi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="11dp"
+        android:text=""
+        android:textColor="#F8F7F5"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/tikdort"
+        app:layout_constraintStart_toStartOf="@+id/harfdort"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/harfbir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:text="C"
+        android:textColor="#F6F5F1"
+        android:textSize="70dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/harfiki"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/harfalti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:text="E"
+        android:textColor="#ECEAE4"
+        android:textSize="70dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/harfbes"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/harfbes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:text="L"
+        android:textColor="#EDECE9"
+        android:textSize="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/harfalti"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/harfdort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="İ"
+        android:textColor="#FAF6EB"
+        android:textSize="70dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/harfuc"
+        app:layout_constraintEnd_toStartOf="@+id/harfbes" />
+
+    <TextView
+        android:id="@+id/harfiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:text="E"
+        android:textColor="#FDFCFA"
+        android:textSize="70dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/harfuc"
+        app:layout_constraintEnd_toStartOf="@+id/harfuc" />
+
+    <TextView
+        android:id="@+id/harfuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="7dp"
+        android:text="M"
+        android:textColor="#F8F7F3"
+        android:textSize="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/harfdort"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tikuc" />
+
+    <ImageView
+        android:id="@+id/tikbir"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tikiki"
+        app:layout_constraintEnd_toStartOf="@+id/tikiki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tikiki"
+        app:srcCompat="@drawable/yesiltik" />
+
+    <ImageView
+        android:id="@+id/tikiki"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tikuc"
+        app:layout_constraintEnd_toStartOf="@+id/tikuc"
+        app:layout_constraintStart_toEndOf="@+id/tikbir"
+        app:layout_constraintTop_toTopOf="@+id/tikuc"
+        app:srcCompat="@drawable/yesiltik" />
+
+    <ImageView
+        android:id="@+id/tikuc"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toStartOf="@+id/tikdort"
+        app:layout_constraintStart_toEndOf="@+id/tikiki"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/yesiltik" />
+
+    <ImageView
+        android:id="@+id/tikdort"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tikuc"
+        app:layout_constraintEnd_toStartOf="@+id/tikbes"
+        app:layout_constraintStart_toEndOf="@+id/tikuc"
+        app:layout_constraintTop_toTopOf="@+id/tikuc"
+        app:srcCompat="@drawable/yesiltik" />
+
+    <ImageView
+        android:id="@+id/tikbes"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tikdort"
+        app:layout_constraintEnd_toStartOf="@+id/tikalti"
+        app:layout_constraintStart_toEndOf="@+id/tikdort"
+        app:layout_constraintTop_toTopOf="@+id/tikdort"
+        app:srcCompat="@drawable/yesiltik" />
+
+    <ImageView
+        android:id="@+id/tikalti"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tikbes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tikbes"
+        app:layout_constraintTop_toTopOf="@+id/tikbes"
+        app:srcCompat="@drawable/yesiltik" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
